@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "mcp-reborn_client",
+      "request": "launch",
+      "mainClass": "mcp.client.Start",
+      "projectName": "mcp-reborn",
+      "cwd": "${workspaceFolder}/run",
+      "vmArgs": "",
+      "args": "",
+      "env": {
+        "MOD_CLASSES": "${workspaceFolder}/bin/main:${workspaceFolder}/bin/main"
+      }
+    },
+    {
+      "type": "java",
+      "name": "mcp-reborn_server",
+      "request": "launch",
+      "mainClass": "net.minecraft.server.MinecraftServer",
+      "projectName": "mcp-reborn",
+      "cwd": "${workspaceFolder}/run",
+      "vmArgs": "",
+      "args": "",
+      "env": {
+        "MOD_CLASSES": "${workspaceFolder}/bin/main:${workspaceFolder}/bin/main"
+      }
+    }
+  ]
+}
